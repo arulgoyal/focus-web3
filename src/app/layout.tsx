@@ -4,6 +4,9 @@ import { Inter,Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import { createClient } from '@/prismicio'
 
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
+
 const inter = Inter({ subsets: ['latin'] })
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -19,13 +22,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
 
-  const page = await client.getSingle("settings");
+  const settings = await client.getSingle("settings");
 
   return {
-    title: page.data.site_title || "FocusWeb3",
-    description: page.data.meta_description || "FocusWeb3 is a marketing/sales company for crypto businesses.",
+    title: settings.data.site_title || "FocusWeb3",
+    description: settings.data.meta_description || "FocusWeb3 is a marketing/sales company for crypto businesses.",
     openGraph: {
-      images: [page.data.og_image.url || ""],
+      images: [settings.data.og_image.url || ""],
     },
   }
 } 
@@ -37,17 +40,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={clsx(inter.className,plusJakartaSans.variable)}>
-      <body >
+      <body className='bg-black text-white'>
 
-        <header>
-          Header! 
-        </header>
+        <Header />
 
         {children} 
 
-        <footer>
-          Footer! 
-        </footer>
+        <Footer />
 
         </body>
     </html>

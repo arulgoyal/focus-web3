@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily:{
         body:["var(--font-plus-jakarta-sans)"]
       }
+      
     },
   },
   plugins: [],
