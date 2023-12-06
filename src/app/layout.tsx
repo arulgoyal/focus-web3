@@ -7,11 +7,13 @@ import { createClient } from '@/prismicio'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 const plusJakartaSans = Plus_Jakarta_Sans({
+  weight: ['400', '700'],
   subsets: ['latin'],
-  variable: '--font-plus-jakarta-sans',
+  // variable: '--font-plus-jakarta-sans',
   display: 'swap',
 })
 
@@ -39,7 +41,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={clsx(inter.className,plusJakartaSans.variable)}>
+    // <html lang='en'>
+    <html lang="en" className={clsx(plusJakartaSans.className)}>
       <body className='bg-black text-white'>
 
         <Header />
