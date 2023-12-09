@@ -33,6 +33,13 @@
         "config": {
           "label": "Navigation",
           "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
             "link": {
               "type": "Link",
               "config": {
@@ -40,23 +47,8 @@
                 "placeholder": "",
                 "select": null
               }
-            },
-            "label": {
-              "type": "Text",
-              "config": {
-                "label": "Label",
-                "placeholder": ""
-              }
             }
           }
-        }
-      },
-      "site_logo": {
-        "type": "Image",
-        "config": {
-          "label": "Site Logo",
-          "constraint": {},
-          "thumbnails": []
         }
       }
     }

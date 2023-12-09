@@ -3,5 +3,10 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  blog: dynamic(() => import("./Blog")),
   hero: dynamic(() => import("./Hero")),
+  hero_2: dynamic(() => import("./TextBesideImage")),
+  join_our_mission: dynamic(() => import("./JoinOurMission")),
+  our_services: dynamic(() => import("./OurServices")),
+  web3_marketing_guide: dynamic(() => import("./Web3MarketingGuide")),
 };

@@ -1,0 +1,120 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Whenever"
+						}
+					}
+				]
+			},
+			"leftmaindescription": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Aute ipsum deserunt aliquip do laboris exercitation enim tempor sit veniam cillum. Minim elit magna ut culpa Lorem proident."
+						}
+					}
+				]
+			},
+			"rightheading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Bright"
+						}
+					}
+				]
+			},
+			"leftsubheading1": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Various"
+						}
+					}
+				]
+			},
+			"leftsubdescription1": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ex quis cillum cupidatat labore veniam consectetur ad officia anim aliquip. Id et cillum elit dolor cupidatat ut non commodo. Ad pariatur id culpa nisi minim ad consectetur adipisicing duis commodo enim non cillum magna."
+						}
+					}
+				]
+			},
+			"leftsubheading2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Sides"
+						}
+					}
+				]
+			},
+			"leftsubdescription2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem sit ullamco veniam mollit mollit ullamco dolor quis sit cupidatat in minim aliqua in officia. Quis magna non commodo aliquip ullamco eiusmod. Consequat laboris irure ea est aute consectetur."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"rightsubheading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Social"
+									}
+								}
+							]
+						}
+					],
+					[
+						"rightdescription",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Ex consequat amet labore quis dolor anim eu eu duis sint excepteur. Nisi non veniam Lorem nostrud qui duis duis reprehenderit consectetur veniam est occaecat."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

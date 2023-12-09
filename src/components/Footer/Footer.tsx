@@ -2,6 +2,9 @@ import { createClient } from "@/prismicio";
 import Link from "next/link";
 import "./Footer.css"
 import { PrismicNextLink } from "@prismicio/next";
+import Logo from "@/components/Logo"
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default async function Footer(){
     const client = createClient();
@@ -13,7 +16,7 @@ export default async function Footer(){
             <div className="footerwrap">
                 <div className="footercontentwrap">
                     <div className="footerflexbox1">
-                    <Link href="/">logo
+                    <Link href="/"><Logo />
                     </Link>
                     <p className="footeremail">
                     Email:Contact@focusweb3.io
@@ -23,10 +26,10 @@ export default async function Footer(){
                     </p>
                         <div className="footerflexbox1subflexbox">
                             <Link href="/">
-                                twiiter
+                            <FaTwitter />
                             </Link>
                             <Link href="/">
-                                insta
+                            <FaLinkedinIn />
                             </Link>
                         </div>
                     </div>
@@ -63,7 +66,7 @@ export default async function Footer(){
                         <h2>Sign up for our newsletter</h2>
                         <div className="formsignup">
                             <input type="text" className="signupinput" placeholder="Enter your email address"/>
-                            <button>Sign me up</button>
+                            <button className="footerbutton">Sign me up</button>
                         </div>
                     </div>
                     </div>

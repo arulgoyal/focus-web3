@@ -11,7 +11,7 @@ import Footer from '@/components/Footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 const plusJakartaSans = Plus_Jakarta_Sans({
-  weight: ['400', '700'],
+  weight: ['400', '700','200','500'],
   subsets: ['latin'],
   // variable: '--font-plus-jakarta-sans',
   display: 'swap',
