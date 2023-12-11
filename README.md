@@ -12,6 +12,10 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
+Second, run the slice machine server:
+
+npm run slicemachine
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
