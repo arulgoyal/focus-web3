@@ -7,7 +7,14 @@
     align-items: center;
     justify-content: center;
     padding: 5%;
-    gap: 2rem;
+    position: relative;
+}
+.section4vector{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    right: 25%;
 }
 .landingpagesection4wrap{
     height: auto;
@@ -28,13 +35,6 @@
     position: relative;
     gap: 1.5rem;
     max-width: 50%;
-}
-.section4linevector{
-    position: absolute;
-    bottom: -7%;
-    left: 0;
-    z-index: -1;
-    
 }
 .section4heading{
     color: #FFF;
@@ -158,9 +158,6 @@
 @media (max-width: 855px){
     .landingpagesection4wrap{
         flex-direction: column-reverse;
-    }
-    .section4linevector{
-        display: none;
     }
     .section4contentwrap{
         align-items: center;

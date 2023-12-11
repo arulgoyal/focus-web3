@@ -2,6 +2,8 @@ import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import "./index.css"
 import tickvector from "../../../../Images/contactustickvector.png"
+import ellipse1 from "../../../../Images/contactusellipse1.png"
+import ellipse2 from "../../../../Images/contactusellipse2.png"
 import Image from "next/image";
 /**
  * Props for `ContactUs`.
@@ -18,6 +20,8 @@ const ContactUs = ({ slice }: ContactUsProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <div className="contactussectionwrap">
+      <Image src={ellipse1} alt ="ellipse1" className="contactusellipse1" />
+        <Image src={ellipse2} alt ="ellipse2" className="contactusellipse2" />
         <div className="contactusheadingwrap">
         <PrismicRichText field={slice.primary.heading} components={{
                   heading1: ({children}) => (
@@ -40,7 +44,12 @@ const ContactUs = ({ slice }: ContactUsProps): JSX.Element => {
           <div className="faeturesbox">
                         {slice.items.map((item,index) => (
                           <div key={index} className="featuresboxstyling">
-                            <Image src={tickvector} alt='tickvector'className='tickvector' /><PrismicRichText field={item.features} />
+                            <Image src={tickvector} alt='tickvector'className='tickvector' /><PrismicRichText field={item.features} 
+                            components={{
+                              heading4: ({children}) => (
+                              <h4 className="contactusfeaturesfont">{children}</h4>
+                              )
+                            }}/>
                           </div>
                         ))}
                     </div>

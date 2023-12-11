@@ -10,12 +10,23 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.joinourmissionellipse1{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+}
+.joinourmissionellipse2{
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+}
 .joinourmissionheading{
     text-align: center;
     font-size: 1.875rem;
     font-style: normal;
     font-weight: 600;
     line-height: 2.875rem; /* 153.333% */
+    z-index: 5;
 }
 .joinourmissiondescription{
     text-align: center;
@@ -25,6 +36,7 @@
     line-height: 1.5rem; /* 150% */
     letter-spacing: 0.04rem;
     max-width: 60rem;
+    z-index: 5;
 }
 .joinourmissionsubheading{
     text-align: center;
@@ -32,6 +44,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.75rem; /* 140% */
+    z-index: 5;
 }
 .joinourmissionbutton{
     display: flex;
@@ -49,6 +62,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.5rem; /* 150% */
+    z-index: 5;
 }
 .joinourmissionsubdescription{
     text-align: center;
@@ -58,4 +72,21 @@
     line-height: 1.5rem; /* 150% */
     letter-spacing: 0.04rem;
     max-width: 600px;
+    z-index: 5;
+}
+@media (max-width: 500px){
+    .joinourmissionheading{
+        font-size: 1.5625rem;
+    }
+    .joinourmissiondescription{
+        font-size: 0.875rem;
+    }
+    .joinourmissionsubheading{
+        font-size: 1.125rem;
+    }
+    .joinourmissionsubdescription{
+        font-size: 0.675rem;
+        text-align: left;
+        max-width: 17rem;
+    }
 }

@@ -2,6 +2,9 @@ import { Content } from "@prismicio/client";
 import { PrismicNextLink } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import "./index.css"
+import ellipse1 from "../../../../Images/joinourmissionellipse1.png"
+import ellipse2 from "../../../../Images/joinourmissionellipse2.png"
+import Image from "next/image";
 /**
  * Props for `Joinourmission`.
  */
@@ -18,6 +21,8 @@ const Joinourmission = ({ slice }: JoinourmissionProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <div className="joinourmissioncontentwrap">
+      <Image src={ellipse1} alt ="ellipse1" className="joinourmissionellipse1" />
+        <Image src={ellipse2} alt ="ellipse2" className="joinourmissionellipse2" />
       <PrismicRichText field={slice.primary.heading} components={{
                   heading1: ({children}) => (
                   <h1 className="joinourmissionheading">{children}</h1>

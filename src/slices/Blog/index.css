@@ -4,11 +4,23 @@
     justify-content: center;
     align-items: center;
     padding: 5%;
-    gap: 1rem;
+    gap: 2rem;
     position: relative;
     background-image: url(../../../../Images/blogsectionbackground.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+.blogellipse1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    /* z-index: -1; */
+}
+.blogellipse2{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    /* z-index: -1; */
 }
 .blogheading{
     text-align: center;
@@ -16,6 +28,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 4rem; /* 114.286% */
+    z-index: 5;
 }
 .blogcontentsection{
     display: flex;
@@ -24,6 +37,7 @@
     gap: 2rem;
     width: 100%;
     /* flex-wrap: wrap; */
+    z-index: 5;
 }
 .blogsubheading{
     font-size: 1.875rem;
@@ -114,6 +128,23 @@
     flex-shrink: 0;
     border-radius: 0.3125rem;
 }
+.viewallblogsbutton{
+    display: flex;
+    width: 13.125rem;
+    height: 3.125rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+}
 
 @media (max-width: 1300px){
     .blogheading{
@@ -134,6 +165,10 @@
     .blogsectionpart2{
         width: 100%;
     }
+    .blogsectioncontentwrap{
+        background-image: none;
+
+    }
 }
 @media (max-width: 700px){
     .blogheading{
@@ -145,5 +180,52 @@
     .blogimage{
         height: 15.125rem;
         width: 100%;
+    }
+   
+    .blogellipse1{
+        display: none;
+    }
+    .blogellipse2{
+        display: none;
+    }
+    .mainarticleblogdescription{
+        font-size: 0.9rem;
+        line-height: normal;
+    }
+    .mainarticleblogsheading{
+        font-size: 1rem;
+        top: 69%;
+    }
+    .publishdate{
+        font-size: 0.875rem;
+        top: 90%;
+    }
+}
+@media (max-width: 492px){
+    .mainarticleblogdescription{
+        font-size: 0.7rem;
+        line-height: normal;
+    }
+    .mainarticleblogsheading{
+        font-size: 1rem;
+        top: 69%;
+    }
+    .publishdate{
+        font-size: 0.65rem;
+        top: 90%;
+    }
+}
+@media (max-width: 400px){
+    .mainarticleblogdescription{
+        font-size: 0.5rem;
+        line-height: normal;
+    }
+    .mainarticleblogsheading{
+        font-size: 1rem;
+        top: 65%;
+    }
+    .publishdate{
+        font-size: 0.55rem;
+        top: 90%;
     }
 }

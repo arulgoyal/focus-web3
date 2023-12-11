@@ -12,12 +12,11 @@ type Params = { uid: string };
 export default async function Page({ params }: { params: Params }) {
   const client = createClient();
   const page = await client
-    .getByUID("trendingarticle", params.uid)
+    .getByUID("mainarticle", params.uid)
     .catch(() => notFound());
 
-//   return <SliceZone slices={page.data.slices} components={components} />;
-     return(
-        <div className="trendingarticlepagewrap">
+  return (
+    <div className="trendingarticlepagewrap">
         
         <PrismicRichText field={page.data.heading} components={{
                       heading3: ({children}) => (
@@ -49,7 +48,7 @@ export default async function Page({ params }: { params: Params }) {
         </Link>
       </div>
       
-     )
+  )
 }
 
 export async function generateMetadata({
@@ -59,7 +58,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const client = createClient();
   const page = await client
-    .getByUID("trendingarticle", params.uid)
+    .getByUID("mainarticle", params.uid)
     .catch(() => notFound());
 
   return {
@@ -70,10 +69,9 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const client = createClient();
-  const pages = await client.getAllByType("trendingarticle");
+  const pages = await client.getAllByType("mainarticle");
 
   return pages.map((page) => {
     return { uid: page.uid };
   });
 }
-

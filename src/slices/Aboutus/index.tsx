@@ -3,7 +3,8 @@ import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Image from "next/image";
 import pageimage from "../../../../Images/aboutus-section-image.png"
 import "./index.css"
-
+import ellipse1 from "../../../../Images/aboutusellipse1.png"
+import ellipse2 from "../../../../Images/aboutusellipse2.png"
 /**
  * Props for `Aboutus`.
  */
@@ -19,6 +20,8 @@ const Aboutus = ({ slice }: AboutusProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <div className="aboutussectioncontentwrap">
+        <Image src={ellipse1} alt ="ellipse1" className="aboutusellipse1" />
+        <Image src={ellipse2} alt ="ellipse2" className="aboutusellipse2" />
         <div className="headingwrap">
         <PrismicRichText field={slice.primary.heading} components={{
                       heading1: ({children}) => (

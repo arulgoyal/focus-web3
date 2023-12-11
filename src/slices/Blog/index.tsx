@@ -8,6 +8,8 @@ import { PrismicNextImage } from "@prismicio/next";
 import Image from "next/image";
 import testimage from '../../../../Images/web3marketing1.png'
 import Link from "next/link";
+import ellipse1 from "../../../../Images/b;ogellipse1.png"
+import ellipse2 from "../../../../Images/blogellipse2.png"
 /**
  * Props for `Blog`.
  */
@@ -17,6 +19,7 @@ export type BlogProps = SliceComponentProps<Content.BlogSlice>;
  * Component for "Blog" Slices.
  */
 const Blog = async ({ slice }: BlogProps): Promise<JSX.Element> => {
+  
   const client = createClient();
 
   const trendingArticles = await Promise.all(
@@ -50,6 +53,8 @@ const Blog = async ({ slice }: BlogProps): Promise<JSX.Element> => {
       data-slice-variation={slice.variation}
     >
       <div className="blogsectioncontentwrap">
+      <Image src={ellipse1} alt ="ellipse1" className="blogellipse1" />
+        <Image src={ellipse2} alt ="ellipse2" className="blogellipse2" />
         <div className="headingwrap">
           <PrismicRichText field={slice.primary.heading} components={{
                       heading1: ({children}) => (
@@ -111,6 +116,7 @@ const Blog = async ({ slice }: BlogProps): Promise<JSX.Element> => {
                   ))}
             </div>
           </div>
+          <Link href={`allblogspage/`}><button className="viewallblogsbutton">View All Blogs</button> </Link>
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import "./index.css"
 import Image from "next/image";
 import image from "../../../../Images/section4image.png"
 import { WiCloudDown } from "react-icons/wi";
+import vector from "../../../../Images/landingpagesection4bg.png"
 /**
  * Props for `LandingpageSection4`.
  */
@@ -21,7 +22,10 @@ const LandingpageSection4 = ({
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <div className="section4wrap"><div className="section4heading">
+      
+      <div className="section4wrap">
+      <Image src={vector} alt="vector" className="section4vector"/>
+        <div className="section4heading">
           <PrismicRichText field={slice.primary.heading} components={{
               heading1: ({children}) => (
                <h1 className="section4heading">{children}</h1>
@@ -66,7 +70,7 @@ const LandingpageSection4 = ({
           </div>
         </div>
         <div className="section4imagewrap">
-          <Image src={image} alt="imageaboutus" className="section2image" />
+          <Image src={image} alt="imageaboutus" className="section4image" />
         </div>
       </div>
       </div>

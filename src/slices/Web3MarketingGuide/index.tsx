@@ -5,6 +5,7 @@ import Image from "next/image";
 import image1 from "../../../../Images/web3marketing1.png"
 import image2 from "../../../../Images/web3marketing2.png"
 import radial from "../../../../Images/web3radialvector.png"
+import ellipse from "../../../../Images/web3marketingellipse.png"
 /**
  * Props for `Web3MarketingGuide`.
  */
@@ -23,6 +24,7 @@ const Web3MarketingGuide = ({
       data-slice-variation={slice.variation}
     >
       <div className="web3marketingcontentwrap">
+      <Image src={ellipse} alt ="ellipse1" className="web3marketingellipse1" />
         {/* <Image src={radial} alt="radial" className="radial" /> */}
         <div className="radial">
           

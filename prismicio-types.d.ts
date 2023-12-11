@@ -4,6 +4,82 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
+type AllblogspageDocumentDataSlicesSlice = AllBlogsSlice;
+
+/**
+ * Content for Allblogspage documents
+ */
+interface AllblogspageDocumentData {
+  /**
+   * Title field in *Allblogspage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: allblogspage.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Slice Zone field in *Allblogspage*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: allblogspage.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<AllblogspageDocumentDataSlicesSlice> /**
+   * Meta Description field in *Allblogspage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: allblogspage.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Allblogspage*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: allblogspage.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Allblogspage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: allblogspage.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Allblogspage document from Prismic
+ *
+ * - **API ID**: `allblogspage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type AllblogspageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<AllblogspageDocumentData>,
+    "allblogspage",
+    Lang
+  >;
+
 /**
  * Item in *Footer → Services Footer*
  */
@@ -576,6 +652,7 @@ export type TrendingarticleDocument<Lang extends string = string> =
   >;
 
 export type AllDocumentTypes =
+  | AllblogspageDocument
   | FooterDocument
   | HomepageDocument
   | LandingpageDocument
@@ -636,6 +713,66 @@ type AboutusSliceVariation = AboutusSliceDefault;
 export type AboutusSlice = prismic.SharedSlice<
   "aboutus",
   AboutusSliceVariation
+>;
+
+/**
+ * Primary content in *AllBlogs → Primary*
+ */
+export interface AllBlogsSliceDefaultPrimary {
+  /**
+   * Heading field in *AllBlogs → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: all_blogs.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *AllBlogs → Items*
+ */
+export interface AllBlogsSliceDefaultItem {
+  /**
+   * TrendingArticle field in *AllBlogs → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: all_blogs.items[].trendingarticle
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  trendingarticle: prismic.ContentRelationshipField<"trendingarticle">;
+}
+
+/**
+ * Default variation for AllBlogs Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AllBlogsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<AllBlogsSliceDefaultPrimary>,
+  Simplify<AllBlogsSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *AllBlogs*
+ */
+type AllBlogsSliceVariation = AllBlogsSliceDefault;
+
+/**
+ * AllBlogs Shared Slice
+ *
+ * - **API ID**: `all_blogs`
+ * - **Description**: AllBlogs
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AllBlogsSlice = prismic.SharedSlice<
+  "all_blogs",
+  AllBlogsSliceVariation
 >;
 
 /**
@@ -1587,6 +1724,9 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
+      AllblogspageDocument,
+      AllblogspageDocumentData,
+      AllblogspageDocumentDataSlicesSlice,
       FooterDocument,
       FooterDocumentData,
       FooterDocumentDataServicesFooterItem,
@@ -1611,6 +1751,11 @@ declare module "@prismicio/client" {
       AboutusSliceDefaultPrimary,
       AboutusSliceVariation,
       AboutusSliceDefault,
+      AllBlogsSlice,
+      AllBlogsSliceDefaultPrimary,
+      AllBlogsSliceDefaultItem,
+      AllBlogsSliceVariation,
+      AllBlogsSliceDefault,
       BlogSlice,
       BlogSliceDefaultPrimary,
       BlogSliceDefaultItem,

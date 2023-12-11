@@ -12,6 +12,12 @@
     background-size: contain;
     position: relative;
 }
+.web3marketingellipse1{
+    position: absolute;
+    bottom: 2%;
+    right: 10%;
+    z-index: -5;
+}
 .radial{
     position: absolute;
     max-width: 81.75rem;
@@ -128,6 +134,9 @@ line-height: 2.875rem; /* 153.333% */
     } */
     .web3marketingheading{
         font-size: 1.875rem;
+    }
+    .web3marketingellipse1{
+        display: none;
     }
     .web3marketingleftsubheading{
         font-size: 1.5625rem;
