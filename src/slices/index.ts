@@ -3,10 +3,16 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  aboutus: dynamic(() => import("./Aboutus")),
   blog: dynamic(() => import("./Blog")),
+  contact_us: dynamic(() => import("./ContactUs")),
   hero: dynamic(() => import("./Hero")),
   hero_2: dynamic(() => import("./TextBesideImage")),
-  join_our_mission: dynamic(() => import("./JoinOurMission")),
+  joinourmission: dynamic(() => import("./Joinourmission")),
+  landingpage_hero: dynamic(() => import("./LandingpageHero")),
+  landingpage_section3: dynamic(() => import("./LandingpageSection3")),
+  landingpage_section4: dynamic(() => import("./LandingpageSection4")),
+  landingpagesection2: dynamic(() => import("./Landingpagesection2")),
   our_services: dynamic(() => import("./OurServices")),
   web3_marketing_guide: dynamic(() => import("./Web3MarketingGuide")),
 };

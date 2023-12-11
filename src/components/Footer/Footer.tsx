@@ -15,6 +15,7 @@ export default async function Footer(){
         <footer>
             <div className="footerwrap">
                 <div className="footercontentwrap">
+                    <div className="footerflexboxfor2boxes">
                     <div className="footerflexbox1">
                     <Link href="/"><Logo />
                     </Link>
@@ -33,6 +34,7 @@ export default async function Footer(){
                             </Link>
                         </div>
                     </div>
+                    
                     <div className="footerflexbox2">
                         <h2>Company</h2>
                         <ul className="footernavigation">
@@ -43,6 +45,8 @@ export default async function Footer(){
                     )}
                 </ul>
                     </div>
+                </div>
+                    <div className="footerflexboxfor3boxes">
                     <div className="footerflexbox3">
                     <h2>Services</h2>
                         <ul className="footerservices">
@@ -70,6 +74,7 @@ export default async function Footer(){
                         </div>
                     </div>
                     </div>
+                </div>
                 </div>
             </div>
 

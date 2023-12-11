@@ -1,6 +1,6 @@
 {
-  "id": "homepage",
-  "label": "Homepage",
+  "id": "landingpage",
+  "label": "Landingpage",
   "format": "page",
   "repeatable": false,
   "status": true,
@@ -18,28 +18,16 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "joinourmission": {
+            "landingpage_section4": {
               "type": "SharedSlice"
             },
-            "aboutus": {
+            "landingpage_section3": {
               "type": "SharedSlice"
             },
-            "contact_us": {
+            "landingpagesection2": {
               "type": "SharedSlice"
             },
-            "blog": {
-              "type": "SharedSlice"
-            },
-            "web3_marketing_guide": {
-              "type": "SharedSlice"
-            },
-            "our_services": {
-              "type": "SharedSlice"
-            },
-            "hero_2": {
-              "type": "SharedSlice"
-            },
-            "hero": {
+            "landingpage_hero": {
               "type": "SharedSlice"
             }
           }
@@ -47,13 +35,6 @@
       }
     },
     "SEO & Metadata": {
-      "meta_title": {
-        "config": {
-          "label": "Meta Title",
-          "placeholder": "A title of the page used for social media and search engines"
-        },
-        "type": "Text"
-      },
       "meta_description": {
         "config": {
           "label": "Meta Description",
@@ -71,6 +52,13 @@
           "thumbnails": []
         },
         "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
       }
     }
   }

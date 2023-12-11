@@ -6,9 +6,9 @@
     padding: 5%;
     gap: 1rem;
     position: relative;
-    /* background-image: url(../../../../Images/joinourmissionbg.png);
+    background-image: url(../../../../Images/joinourmissionbg.png);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 .joinourmissionheading{
     text-align: center;

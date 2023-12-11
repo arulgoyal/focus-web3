@@ -1,8 +1,8 @@
 {
-  "id": "joinourmission",
+  "id": "landingpagesection2",
   "type": "SharedSlice",
-  "name": "Joinourmission",
-  "description": "Joinourmission",
+  "name": "Landingpagesection2",
+  "description": "Landingpagesection2",
   "variations": [
     {
       "id": "default",
@@ -37,14 +37,6 @@
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "heading2,heading3,heading4,heading5,heading6,strong"
-          }
-        },
-        "buttonlink": {
-          "type": "Link",
-          "config": {
-            "label": "ButtonLink",
-            "placeholder": "",
-            "select": null
           }
         },
         "subdescription": {

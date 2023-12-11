@@ -1,18 +1,17 @@
 import { Content } from "@prismicio/client";
+import { PrismicNextLink } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import "./index.css"
-import { PrismicNextLink } from "@prismicio/next";
+/**
+ * Props for `Joinourmission`.
+ */
+export type JoinourmissionProps =
+  SliceComponentProps<Content.JoinourmissionSlice>;
 
 /**
- * Props for `JoinOurMission`.
+ * Component for "Joinourmission" Slices.
  */
-export type JoinOurMissionProps =
-  SliceComponentProps<Content.JoinOurMissionSlice>;
-
-/**
- * Component for "JoinOurMission" Slices.
- */
-const JoinOurMission = ({ slice }: JoinOurMissionProps): JSX.Element => {
+const Joinourmission = ({ slice }: JoinourmissionProps): JSX.Element => {
   return (
     <section
       data-slice-type={slice.slice_type}
@@ -45,4 +44,4 @@ const JoinOurMission = ({ slice }: JoinOurMissionProps): JSX.Element => {
   );
 };
 
-export default JoinOurMission;
+export default Joinourmission;

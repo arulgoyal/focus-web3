@@ -7,6 +7,7 @@ import { createClient } from "@/prismicio";
 import { PrismicNextImage } from "@prismicio/next";
 import Image from "next/image";
 import testimage from '../../../../Images/web3marketing1.png'
+import Link from "next/link";
 /**
  * Props for `Blog`.
  */
@@ -29,6 +30,19 @@ const Blog = async ({ slice }: BlogProps): Promise<JSX.Element> => {
     }
     )
   )
+  // const mainArticles = await Promise.all(
+  //   slice.items.map((item1) => {
+  //     if(
+  //       isFilled.contentRelationship(item1.mainarticle) && 
+  //       item1.mainarticle.uid
+  //     ){
+  //       return client.getByUID("trendingarticle",item1.mainarticle.uid)
+  //     }
+  //   }
+  //   )
+  // )
+  const mainArticles = await client.getSingle("mainarticle")
+
   return (
     
     <section
@@ -45,8 +59,25 @@ const Blog = async ({ slice }: BlogProps): Promise<JSX.Element> => {
         </div>
           <div className="blogcontentsection">
             <div className="blogsectionpart1">
-              <Image src={testimage} alt="tets"/>
+              <PrismicNextImage field={mainArticles.data.blogimage}className="mainarticleblogimage"/>
+              <Link href={`mainarticle/${mainArticles.uid}`}>
+              <PrismicRichText field={mainArticles.data.heading} components={{
+                          heading3: ({children}) => (
+                          <h3 className="mainarticleblogsheading blogheading">{children}</h3>
+                          )
+                        }}/>
+              </Link>
+            <PrismicRichText field={mainArticles.data.blogdescription} components={{
+                          paragraph: ({children}) => (
+                          <p className="mainarticleblogdescription blogdescription">{children}</p>
+                          )
+                        }} />
+            <div className="mainarticlepublishdate publishdate">{mainArticles.data.publishdate}
             </div>
+              
+          </div>
+              
+            
             <div className="blogsectionpart2">
             <PrismicRichText field={slice.primary.subheading} components={{
                       heading2: ({children}) => (
@@ -60,11 +91,13 @@ const Blog = async ({ slice }: BlogProps): Promise<JSX.Element> => {
                           <PrismicNextImage field={item.data.blogimage} className="blogimage"/>
                         </div>
                         <div className="contentsectionbox">
+                        <Link href={`trendingarticle/${item.uid}`}>
                         <PrismicRichText field={item.data.heading} components={{
                           heading3: ({children}) => (
                           <h3 className="blogsheading">{children}</h3>
                           )
                         }}/>
+                        </Link>
                         <PrismicRichText field={item.data.blogdescription} components={{
                           paragraph: ({children}) => (
                           <p className="blogdescription">{children}</p>
