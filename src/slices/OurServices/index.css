@@ -32,11 +32,11 @@
     align-items: center;
     border-radius: 0.3125rem;
     background: #171717;
-    max-height: 16.625rem;
+    /* max-height: 16.625rem; */
     height: auto;
     /* max-width: 390px; */
-    padding: 2rem;
-    gap: 1.5rem;
+    padding: 1rem;
+    /* gap: 1.5rem; */
 
 }
 .ourservicesboxescontainer{
@@ -91,8 +91,5 @@
     }
     .linkbox{
         font-size: 0.875rem;
-    }
-    .boxstyling{
-        max-height: 18rem;
     }
 }

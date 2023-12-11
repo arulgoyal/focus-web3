@@ -182,4 +182,8 @@
         max-width: 24.9375rem;
         height: 3.125rem;
     }
+    .section2buttonwrap{
+        gap: 1.5rem;
+    }
+    
 }

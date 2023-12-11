@@ -51,6 +51,7 @@ const Blog = async ({ slice }: BlogProps): Promise<JSX.Element> => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="blog"
     >
       <div className="blogsectioncontentwrap">
       <Image src={ellipse1} alt ="ellipse1" className="blogellipse1" />
@@ -74,7 +75,7 @@ const Blog = async ({ slice }: BlogProps): Promise<JSX.Element> => {
               </Link>
             <PrismicRichText field={mainArticles.data.blogdescription} components={{
                           paragraph: ({children}) => (
-                          <p className="mainarticleblogdescription blogdescription">{children}</p>
+                          <p className="mainarticleblogdescription ">{children}</p>
                           )
                         }} />
             <div className="mainarticlepublishdate publishdate">{mainArticles.data.publishdate}

@@ -41,12 +41,13 @@
             "single": "paragraph,strong"
           }
         },
-        "readmorelink": {
-          "type": "Link",
+        "extendeddescription": {
+          "type": "StructuredText",
           "config": {
-            "label": "readmoreLink",
+            "label": "extendedDescription",
             "placeholder": "",
-            "select": null
+            "allowTargetBlank": true,
+            "single": "paragraph,strong"
           }
         }
       }

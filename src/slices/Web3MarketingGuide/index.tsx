@@ -22,6 +22,7 @@ const Web3MarketingGuide = ({
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="web3marketingguide"
     >
       <div className="web3marketingcontentwrap">
       <Image src={ellipse} alt ="ellipse1" className="web3marketingellipse1" />
@@ -70,13 +71,13 @@ const Web3MarketingGuide = ({
                   )
                 }} />
           </div>
-          <div className="image1wrap">
+          <div className="image1wrap1">
           <Image src={image1} alt="image1" className="image1"></Image>
           </div>
         </div>
         <div className="web3marketingsection1 web3marketingsection2">
-          <div className="image1wrap">
-            <Image src={image2} alt="image2" className="image2"></Image>
+          <div className="image1wrap2">
+            <Image src={image2} alt="image2" className="image2 " ></Image>
           </div>
           <div className="contentsection1">
           <PrismicRichText field={slice.primary.rightheading} components={{

@@ -19,6 +19,7 @@ const Joinourmission = ({ slice }: JoinourmissionProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="joinourmission"
     >
       <div className="joinourmissioncontentwrap">
       <Image src={ellipse1} alt ="ellipse1" className="joinourmissionellipse1" />

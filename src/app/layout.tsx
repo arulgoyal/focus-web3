@@ -42,8 +42,8 @@ export default function RootLayout({
 }) {
   return (
     // <html lang='en'>
-    <html lang="en" className={clsx(plusJakartaSans.className)}>
-      <body className='bg-black text-white'>
+    <html lang="en" className={clsx(plusJakartaSans.className)} >
+      <body className='bg-[#010101] text-white'>
 
         <Header />
 

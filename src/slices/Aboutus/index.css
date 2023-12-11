@@ -50,6 +50,9 @@
     letter-spacing: 0.04rem;
     max-width: 550px;
 }
+.extendeddescription{
+    max-width: 70%;
+}
 .aboutusbutton{
     display: flex;
     width: 8.875rem;

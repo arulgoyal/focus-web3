@@ -74,7 +74,15 @@
     max-width: 600px;
     z-index: 5;
 }
+@media (max-width: 950px){
+    .joinourmissioncontentwrap{
+        background-size: contain;
+    }
+}
 @media (max-width: 500px){
+    .joinourmissionellipse1{
+        display: none;
+    }
     .joinourmissionheading{
         font-size: 1.5625rem;
     }

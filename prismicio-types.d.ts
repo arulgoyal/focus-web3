@@ -683,6 +683,16 @@ export interface AboutusSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
+
+  /**
+   * extendedDescription field in *Aboutus → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutus.primary.extendeddescription
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  extendeddescription: prismic.RichTextField;
 }
 
 /**
@@ -1544,14 +1554,14 @@ export interface OurServicesSliceDefaultItem {
   description: prismic.RichTextField;
 
   /**
-   * readmoreLink field in *OurServices → Items*
+   * extendedDescription field in *OurServices → Items*
    *
-   * - **Field Type**: Link
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: our_services.items[].readmorelink
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   * - **API ID Path**: our_services.items[].extendeddescription
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  readmorelink: prismic.LinkField;
+  extendeddescription: prismic.RichTextField;
 }
 
 /**

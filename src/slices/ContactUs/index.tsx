@@ -18,6 +18,7 @@ const ContactUs = ({ slice }: ContactUsProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="contactus"
     >
       <div className="contactussectionwrap">
       <Image src={ellipse1} alt ="ellipse1" className="contactusellipse1" />

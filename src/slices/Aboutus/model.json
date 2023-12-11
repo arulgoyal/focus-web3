@@ -29,6 +29,15 @@
             "allowTargetBlank": true,
             "single": "paragraph,strong"
           }
+        },
+        "extendeddescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "extendedDescription",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong"
+          }
         }
       },
       "items": {}

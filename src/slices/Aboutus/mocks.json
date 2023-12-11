@@ -24,6 +24,17 @@
 						}
 					}
 				]
+			},
+			"extendeddescription": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit sint cillum tempor Lorem id mollit nulla velit. Magna enim culpa officia cupidatat. Nulla nulla voluptate dolore ex culpa."
+						}
+					}
+				]
 			}
 		},
 		"items": []

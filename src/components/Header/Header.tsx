@@ -85,16 +85,16 @@ export default function Navbar(){
             {/* larger screens Navigations  */}
             <ul className="hidden md:flex text-[16px] text-white navlist">
                 <li className="mr-20 ml-20">
-                    <Link href={"/home"}>About Us</Link>
+                    <Link href={"#aboutus"}>About Us</Link>
                 </li>
                 <li className="mr-20">
-                    <Link href={"/home"}>Our service</Link>
+                    <Link href={"#ourservice"}>Our service</Link>
                 </li>
                 <li className="mr-20">
-                    <Link href={"/home"}>Blog</Link>
+                    <Link href={"#blog"}>Blog</Link>
                 </li>
                 <li className="mr-20">
-                    <Link href={"/home"}>Contact Us</Link>
+                    <Link href={"#contactus"}>Contact Us</Link>
                 </li>
 
             </ul>
@@ -122,16 +122,16 @@ export default function Navbar(){
                 <div className="w-full">
                     <ul className="text-2xl flex flex-col gap-5">
                         <li onClick={handleSmallerScreensNavigation} className=" cursor-pointer">
-                            <Link href="">About Us</Link>
+                            <Link href="./#aboutus">About Us</Link>
                         </li>
                         <li onClick={handleSmallerScreensNavigation} className=" cursor-pointer">
-                            <Link href="">Our service</Link>
+                            <Link href="./#ourservice">Our service</Link>
                         </li>
                         <li onClick={handleSmallerScreensNavigation} className=" cursor-pointer">
-                            <Link href="">Blog</Link>
+                            <Link href="./#blog">Blog</Link>
                         </li>
                         <li onClick={handleSmallerScreensNavigation} className=" cursor-pointer">
-                            <Link href="">Contact Us</Link>
+                            <Link href="./#contactus">Contact Us</Link>
                         </li>
                     </ul>
                     <div className="flex flex-col justify-center items-center gap-5 mt-5">

@@ -105,4 +105,8 @@
         justify-content: center;
         align-items: center;
     }
+    .landingpageherobuttons-box{
+        display: flex;
+        gap: 1.5rem;
+    }
 }
