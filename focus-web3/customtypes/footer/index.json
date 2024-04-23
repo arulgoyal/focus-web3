@@ -1,0 +1,41 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "services_footer": {
+        "type": "Group",
+        "config": {
+          "label": "Services Footer",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "official_info_footer": {
+        "type": "Group",
+        "config": {
+          "label": "Official Info Footer",
+          "fields": {
+            "label1": {
+              "type": "Text",
+              "config": {
+                "label": "Label1",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

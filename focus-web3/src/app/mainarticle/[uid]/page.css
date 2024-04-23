@@ -1,0 +1,47 @@
+.trendingarticlepagewrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 1rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.trendingarticlepageblogheading{
+    text-align: center;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; /* 152.381% */
+}
+.trendingarticlepagepublishdate{
+    color: #1D9BF0;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 128.571% */
+}
+.trendingarticlepageblogimage{
+    height: 42rem;
+    max-width: auto;
+}
+.blogpagebutton{
+    display: flex;
+    width: 13.125rem;
+    height: 3.125rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+}

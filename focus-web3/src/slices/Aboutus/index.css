@@ -1,0 +1,103 @@
+.aboutussectioncontentwrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 1rem;
+    position: relative;
+}
+.aboutusellipse1{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    z-index: -1;
+}
+.aboutusellipse2{
+    position: absolute;
+    bottom:  0%;
+    right: 5%;
+    z-index: -1;
+}
+.aboutusheading{
+    display: none;
+}
+.aboutuscontentsection{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem;
+}
+.aboutuscontent{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+.aboutusheadingn{
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; /* 114.286% */
+    letter-spacing: 0.14rem;
+}
+.aboutusdescription{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.04rem;
+    max-width: 550px;
+}
+.extendeddescription{
+    max-width: 70%;
+}
+.aboutusbutton{
+    display: flex;
+    width: 8.875rem;
+    height: 3.125rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.3125rem;
+    background: #2010DC;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+}
+@media (max-width: 1080px){
+    .aboutusheading{
+        display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; /* 120% */
+    letter-spacing: 0.1rem;
+    }
+    .aboutuscontentsection{
+        flex-direction: column;
+    }
+    .aboutuscontent{
+        align-items: center;
+    }
+    .aboutusheadingn{
+        display: none;
+    }
+    .aboutusdescription{
+        text-align: center;
+        max-width: none;
+    }
+}
+@media (max-width: 500px){
+    .aboutusheading{
+        font-size: 1.875rem;
+    }
+    .aboutusdescription{
+        font-size: 0.875rem;
+    }
+}

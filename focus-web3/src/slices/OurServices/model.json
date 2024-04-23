@@ -1,0 +1,56 @@
+{
+  "id": "our_services",
+  "type": "SharedSlice",
+  "name": "OurServices",
+  "description": "OurServices",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong"
+          }
+        }
+      },
+      "items": {
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "subHeading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6,strong"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong"
+          }
+        },
+        "extendeddescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "extendedDescription",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong"
+          }
+        }
+      }
+    }
+  ]
+}

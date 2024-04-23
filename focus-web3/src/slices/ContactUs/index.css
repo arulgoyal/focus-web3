@@ -1,0 +1,192 @@
+.contactussectionwrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 1rem;
+    position: relative;
+    background-image: url(../../../../Images/contactusbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactusellipse1{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+
+}
+.contactusellipse2{
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+
+}
+.contactusheading{
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; /* 114.286% */
+    z-index: 5;
+}
+.contactuscontentsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    /* flex-wrap: wrap; */
+    z-index: 5;
+}
+.contactussubheading{
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.875rem; /* 153.333% */
+}
+.contactuscontentsectionpart1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+.contactusdescription{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.04rem;
+}
+.featuresbox{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.featuresboxstyling{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+.contactusfeaturesfont{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+.contactuscontentsectionpart2{
+    width: 50%;
+}
+.formbox{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.font{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.875rem; /* 287.5% */
+}
+.name{
+    display: flex;
+    height: 3.75rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 0.3125rem;
+    background: #171717;
+
+}
+.email{
+    display: flex;
+    height: 3.75rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 0.3125rem;
+    background: #171717;
+
+}
+.message{
+    display: flex;
+    height: 16.125rem;
+    padding: 1rem 1.5rem;
+    align-items: start;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 0.3125rem;
+    background: #171717;
+    max-height: 300px;
+    min-height: 100px;
+}
+.contactusbutton{
+    display: flex;
+    width: 8.875rem;
+    height: 3.125rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.3125rem;
+    background: #2010DC;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+   
+}
+@media (max-width: 906px){
+    .contactuscontentsection{
+        gap: 2rem;
+    }
+    .contactussubheading{
+        font-size: 1.4rem;
+    }
+    .contactusdescription{
+        font-size: 0.875rem;
+    }
+    .contactusfeaturesfont{
+        font-size: 0.875rem;
+    }
+    .tickvector{
+    width: 1.875rem;
+    height: 1.875rem;
+    }
+    .featuresboxstyling{
+        gap: 0.8rem;
+    }
+}
+@media (max-width: 700px){
+    .contactussectionwrap{
+        align-items: left;
+        justify-content: left;
+    }
+    .contactuscontentsection{
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+    .contactuscontentsectionpart1{
+        width: 100%;
+
+    }
+    .contactuscontentsectionpart2{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .contactusheading{
+        font-size: 1.875rem;
+    }
+    .contactuscontentsectionpart1{
+        gap: 0.5rem;
+    }
+}

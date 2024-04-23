@@ -1,0 +1,189 @@
+.landingpagesection2wrap{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    margin-top: -2.5%;
+    gap: 2rem;
+
+}
+.section2contentwrap{
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    position: relative;
+    gap: 1.5rem;
+    max-width: 50%;
+}
+.section2linevector{
+    position: absolute;
+    bottom: -7%;
+    left: 0;
+    z-index: -1;
+    
+}
+.section2heading{
+    color: #FFF;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.section2imagewrap{
+    max-width: 50%;
+}
+.section2image{
+    height: auto;
+    max-width: 100%;
+}
+.section2description{
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+.section2vector{
+    margin-top: -1.5%;
+}
+.subcontentwrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+    margin-top: -18%;
+    margin-left: 10%;
+}
+.section2subheadingwrap{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    
+}
+.section2dot{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.section2subheading{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.section2subdescription{
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem; /* 144.444% */
+}
+.section2buttonwrap{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: left;
+}
+.section2button1{
+    display: flex;
+    width: 13.125rem;
+    height: 3.125rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    border-radius: 0.3125rem;
+    background: #2010DC;
+}
+.section2button2{
+    display: flex;
+    width: 13.125rem;
+    height: 3.125rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    background-color: black;
+}
+@media (max-width: 768px){
+    .landingpagesection2wrap{
+        flex-direction: column-reverse;
+    }
+    .section2linevector{
+        display: none;
+    }
+    .section2contentwrap{
+        align-items: center;
+        max-width: 100%;
+    }
+    .section2heading{
+        font-size: 1.75rem;
+    }
+    .section2imagewrap{
+        max-width: 100%;
+    }
+    .section2description{
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    .section2vector{
+        display: none;
+        margin-top: none;
+    }
+    .subcontentwrap{
+        align-items: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .section2subheadingwrap{
+        justify-content: center;
+        gap: 1rem;
+        
+    }
+    .section2dot{
+        display: none;
+    }
+    .section2subheading{
+        font-size: 1.5rem;
+    }
+    .section2subdescription{
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    .section2buttonwrap{
+        flex-direction: column;
+    }
+    .section2button1{
+        max-width: 24.9375rem;
+        height: 3.125rem;
+    }
+    .section2button2{
+        max-width: 24.9375rem;
+        height: 3.125rem;
+    }
+    .section2buttonwrap{
+        gap: 1.5rem;
+    }
+    
+}

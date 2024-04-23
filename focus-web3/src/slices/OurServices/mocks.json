@@ -1,0 +1,68 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Street"
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"subheading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Average"
+									}
+								}
+							]
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Veniam incididunt non non reprehenderit ad veniam in elit cupidatat irure exercitation et. Deserunt aute laborum officia sit."
+									}
+								}
+							]
+						}
+					],
+					[
+						"extendeddescription",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Exercitation consequat dolor fugiat duis aliqua eiusmod adipisicing eiusmod fugiat est eiusmod ad consequat excepteur proident. Consectetur anim esse labore magna dolore ad aute eu ipsum nulla dolor amet in non. Est duis excepteur exercitation qui."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,100 @@
+.joinourmissioncontentwrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 1rem;
+    position: relative;
+    background-image: url(../../../../Images/joinourmissionbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.joinourmissionellipse1{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+}
+.joinourmissionellipse2{
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+}
+.joinourmissionheading{
+    text-align: center;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.875rem; /* 153.333% */
+    z-index: 5;
+}
+.joinourmissiondescription{
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.04rem;
+    max-width: 60rem;
+    z-index: 5;
+}
+.joinourmissionsubheading{
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 140% */
+    z-index: 5;
+}
+.joinourmissionbutton{
+    display: flex;
+    width: 10.5625rem;
+    height: 3.125rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.3125rem;
+    background: #2010DC;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    z-index: 5;
+}
+.joinourmissionsubdescription{
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.04rem;
+    max-width: 600px;
+    z-index: 5;
+}
+@media (max-width: 950px){
+    .joinourmissioncontentwrap{
+        background-size: contain;
+    }
+}
+@media (max-width: 500px){
+    .joinourmissionellipse1{
+        display: none;
+    }
+    .joinourmissionheading{
+        font-size: 1.5625rem;
+    }
+    .joinourmissiondescription{
+        font-size: 0.875rem;
+    }
+    .joinourmissionsubheading{
+        font-size: 1.125rem;
+    }
+    .joinourmissionsubdescription{
+        font-size: 0.675rem;
+        text-align: left;
+        max-width: 17rem;
+    }
+}
