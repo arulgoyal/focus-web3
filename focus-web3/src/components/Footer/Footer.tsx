@@ -49,23 +49,23 @@ export default async function Footer(){
                     <div className="footerflexboxfor3boxes">
                     <div className="footerflexbox3">
                     <h2>Services</h2>
-                        <ul className="footerservices">
+                        {/* <ul className="footerservices">
                     {services.data.services_footer.map(({label})=>
                     (<li>
                         {label}
                     </li>)
                     )}
-                </ul>
+                </ul> */}
                     </div>
                     <div className="footerflexbox4">
                     <h2>Official info</h2>
-                    <ul className="footerservices">
+                    {/* <ul className="footerservices">
                     {services.data.official_info_footer.map(({label1})=>
                     (<li>
                         {label1}
                     </li>)
                     )}
-                    </ul>
+                    </ul> */}
                     <div className="footersignup">
                         <h2>Sign up for our newsletter</h2>
                         <div className="formsignup">
